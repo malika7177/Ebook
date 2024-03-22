@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ddd;
+}
+
+
+header {
+    padding: 10px 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+
+}
+
+header .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: white;
+    transition: all 0.5s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+footer {
+    padding: 10px 110px;
+    text-align: center;
+    font-size: small;
+}
+
+section {
+    padding: 50px 110px;
+    width: 100%;
+}
+
+/* home section start */
+.home {
+    background: linear-gradient(to bottom right, orange 0%, orange 60%, white 60%, white 100%);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 60px;
+}
+
+.home-h {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.home-p{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.line{
+    border: 2px solid white;
+    background: white;
+    width: 100px;
+    height: 5px;
+    margin-left: 20px;
+}
+
+.home-img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    -webkit-box-shadow: 16px 15px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 16px 15px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 16px 15px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+
+/* home section end */
+
+/* features start */
+
+.features {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.features-video {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.feature-h4 {
+    color: orange;
+}
+
+/* features end */
+/* chapter section start */
+.chapters {
+    background-color: grey;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.chapters-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.chapter {
+    width: 100%;
+    background: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+/* chapter section end */
+/* testimonials section start */
+.testimonials {
+    background: black;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 800px;
+    max-height: 500px;
+}
+
+.testimonials-box {
+    background-color: orange;
+    color: white;
+    padding: 90px 20px 20px;
+}
+
+.t-h{
+    padding-bottom: 50px;
+}
+
+/* testimonils section end */
+/* about section start */
+.about {
+    background-color: white;
+}
+
+.about-flex{
+    display: flex;
+}
+
+.about-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* about section end */
+/* contact section start */
+.contact {
+    background-color: orange;
+    color: white;
+}
+
+.contact-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+}
+
+input, textarea{
+    /* position: relative; */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea:focus {
+    outline: none;
+    border-color: none;
+}
+
+.subject{
+    width: 380px;
+}
+
+button[type="submit"]{
+    position: absolute;
+    right: 300px;
+    bottom: -2280px;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 90px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 1s;
+}
+/* contact section end */
